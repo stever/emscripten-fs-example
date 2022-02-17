@@ -1,5 +1,9 @@
 # emscripten-fs-example
 
+Note that this project is a mirror rather than a fork of the 
+[upstream repository](https://github.com/munshkr/emscripten-fs-example), so that
+this repository can be used as a template, which can be used multiple times in a single account.
+
 A simple example project for porting a command-line C program to a JavaScript
 library using Emscripten.  Here, the program reads a file and writes its output
 to another file.
