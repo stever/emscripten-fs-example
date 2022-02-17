@@ -1,4 +1,4 @@
-const Module = require('./lib/example.js')
+const Module = require('./dist/example.js')
 
 module.exports = input => {
   return new Promise((resolve, reject) => {
