@@ -1,7 +1,21 @@
 {
   "name": "emscripten-fs-example",
+  "author": "Damián Silvani",
   "version": "1.0.0",
+  "license": "MIT",
   "description": "An example project for porting a command-line C program to a JavaScript library using Emscripten.",
+  "keywords": [
+    "emscripten",
+    "example"
+  ],
+  "homepage": "https://github.com/munshkr/emscripten-fs-example#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/munshkr/emscripten-fs-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/munshkr/emscripten-fs-example/issues"
+  },
   "main": "index.js",
   "files": [
     "index.js",
@@ -17,20 +31,6 @@
     "build:debug": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Debug .. && make && cp-cli example.js ../lib/example.js",
     "build:release": "mkdirp build && cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release .. && make && cp-cli example.js ../lib/example.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/munshkr/emscripten-fs-example.git"
-  },
-  "keywords": [
-    "emscripten",
-    "example"
-  ],
-  "author": "Damián Silvani",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/munshkr/emscripten-fs-example/issues"
-  },
-  "homepage": "https://github.com/munshkr/emscripten-fs-example#readme",
   "devDependencies": {
     "cp-cli": "^1.1.2",
     "mkdirp": "^0.5.1"
